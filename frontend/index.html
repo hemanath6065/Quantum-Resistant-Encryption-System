@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum-Resistant Encryption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hybrid Quantum-Resistant Encryptor</h1>
+        <div class="form-group">
+            <label for="plaintext">Plaintext:</label>
+            <textarea id="plaintext" rows="4" placeholder="Enter sensitive data..."></textarea>
+        </div>
+        <div class="mode-group">
+            <label>Mode:</label>
+            <select id="mode">
+                <option value="PQ">Post-Quantum (Lattice KEM)</option>
+                <option value="RSA">Hybrid RSA</option>
+            </select>
+        </div>
+        <button id="encryptBtn">Encrypt & Store</button>
+        <button id="decryptBtn">Decrypt & Verify</button>
+        <div id="result"></div>
+        <div id="status"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
